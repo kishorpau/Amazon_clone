@@ -1,0 +1,621 @@
+@import url("https://fonts.cdnfonts.com/css/amazon-ember");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", sans-serif;
+}
+body {
+  background-color: #c8d4d4a7;
+  overflow-x: hidden;
+}
+.navbar {
+  height: 60px;
+  background-color: #131a22;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo {
+  padding: 2px 0px;
+  width: 108px;
+  height: 50px;
+}
+.logo img {
+  width: 108px;
+  height: 50px;
+}
+.border {
+  border: 1px solid transparent;
+}
+.border:hover {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.navbar .nav-address {
+  height: 50px;
+  width: 90px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+}
+.nav-address .deliver {
+  font-size: 12px;
+  font-weight: 400;
+  color: #cccccc;
+  padding-top: 14%;
+  padding-left: 25px;
+}
+
+.addressicon {
+  display: flex;
+  padding-left: 8%;
+}
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 890px;
+  height: 40px;
+  border-radius: 4px;
+}
+.nav-search:hover {
+  border: #ffb657 solid 2px;
+}
+.searchicon {
+  border: none;
+  border-right: solid 0.2px #cccccc;
+  background-color: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.searchicon option {
+  width: 400px;
+  text-align: left;
+}
+.nav-search input {
+  width: 100%;
+  font-size: 1rem;
+
+  border: none;
+}
+.search-input .placeholder {
+  padding-left: 5px;
+}
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: black;
+  background-color: #ffb657;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+span {
+  font-size: 0.75rem;
+}
+.nav-sign-in {
+  height: 50px;
+  width: 130px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.nav-sign-two {
+  width: 75px;
+  height: 50px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.sign-in-second {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.sign-in-second span {
+  font-size: 11px;
+  padding-top: 2%;
+  padding-right: 5%;
+  color: #cccccc;
+}
+.nav-cart i {
+  font-size: 30px;
+}
+.nav-cart {
+  height: 50px;
+  width: 82px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding-top: 7px;
+  padding-left: 3px;
+}
+.usa {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding-top: 20px;
+  font-weight: 700;
+  height: 50px;
+  width: 80px;
+}
+.usa img {
+  width: 20px;
+  height: 14px;
+  margin-top: 1.5px;
+}
+.usa i {
+  font-size: 11px;
+  padding-top: 8%;
+  color: #cccccc;
+}
+.panel {
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.panel .panel-option ul li {
+  display: inline-block;
+  height: 40px;
+
+  padding-top: 8px;
+  list-style-type: none;
+  color: white;
+}
+
+.panel-option ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.panel-option {
+  width: 70%;
+  font-size: 0.9rem;
+}
+.panel-deals {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding-left: 40px;
+  margin-left: 20%;
+  padding-top: 7px;
+  height: 40px;
+  width: 20%;
+}
+.panel-all {
+  width: 78px;
+  padding-left: 1%;
+}
+.all-drops {
+  display: none;
+}
+
+.panel-all:hover .all-drops {
+  display: block;
+  width: 365px;
+  height: 721px;
+  background-color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 0.02%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 1;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(192, 192, 192, 0.685);
+}
+.all-drops .hello-sign {
+  display: flex;
+  width: 365px;
+  height: 50px;
+  font-size: 19px;
+  font-weight: bolder;
+  padding-top: 3.3%;
+  padding-left: 9%;
+  background-color: #222f3d;
+  cursor: pointer;
+}
+.all-drops .hello-sign p {
+  padding-left: 3%;
+}
+.all-drops .hello-sign i {
+  font-size: 14px;
+  height: 70%;
+  padding: 7px;
+  border-radius: 50%;
+  color: #222f3d;
+  background-color: #fff;
+}
+
+.all-dropdown {
+  border-bottom: 1px grey;
+  color: #111111;
+}
+.all-dropdown ul li {
+  width: 400px;
+  font-size: 14px;
+  padding-top: 3.5%;
+  padding-left: 9%;
+
+  cursor: pointer;
+}
+.all-dropdown ul .ra:hover {
+  background-color: #f2f2f2;
+}
+
+.ra {
+  height: 42px;
+  display: flex;
+}
+.ra i {
+  padding-top: 4%;
+  color: #777777c5;
+  font-size: 1.1em;
+  padding-right: 7%;
+}
+
+.all-drops .capital {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+  height: 46px;
+  padding-left: 9%;
+  padding-top: 5%;
+  cursor: text;
+}
+.all-dropdown ul .capital:hover {
+  height: 46px;
+}
+
+.all-drops .all-dropdown-1 {
+  width: 348px;
+  height: 170px;
+  color: #111111;
+}
+.hero-section {
+  height: 600px;
+  background-image: url("./images/hero-img.jpg");
+  background-size: cover;
+}
+.shop-section {
+  height: 100vh;
+  padding-top: 17%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+
+  justify-content: space-evenly;
+}
+
+.box {
+  background-color: #fff;
+  width: 355px;
+  height: 420px;
+}
+.box .para {
+  font-size: 21px;
+  padding-left: 6%;
+  padding-top: 4%;
+  font-weight: 700;
+}
+
+.box .image {
+  padding-top: 2%;
+  width: 310px;
+  height: 300px;
+  margin: 0px auto;
+}
+.box .image img {
+  width: 310px;
+  height: 300px;
+  position: relative;
+}
+.box .pa {
+  padding-top: 12%;
+  font-size: 13px;
+  padding-left: 8%;
+  color: #007185;
+  cursor: pointer;
+}
+.height {
+  height: 520px;
+  width: 100%;
+}
+
+.excitement {
+  width: 97.5%;
+  height: 357px;
+  margin: 0 20px;
+  background-color: #fff;
+}
+
+.excitement .pal2 {
+  font-size: 21px;
+  color: #fff;
+}
+.excitement .pal {
+  position: absolute;
+  padding-left: 1%;
+
+  margin-bottom: 2%;
+  font-size: 21px;
+  font-weight: 700;
+}
+.excitement .pal span {
+  font-size: 14px;
+  color: #198496;
+}
+
+.excitement .books {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+}
+.books .books-part {
+  width: 230px;
+  height: 200px;
+  background-color: rgba(15, 17, 17, 0.03);
+}
+.books .books-part .booke {
+  width: 120px;
+  height: 180px;
+  margin-left: 35px;
+}
+.books-description {
+  padding-top: 13%;
+  line-height: 1.5rem;
+}
+
+.author {
+  font-size: 13px;
+}
+.fmoney {
+  font-size: 12px;
+  font-weight: 700;
+  color: #cc0c39;
+}
+.fmoney span {
+  background-color: #cc0c39;
+  border-radius: 5%;
+  color: white;
+  padding: 4px;
+}
+.money {
+  font-size: 12px;
+  color: #565959;
+  font-weight: 400;
+}
+.money span {
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+}
+.excitement2 {
+  width: 97.5%;
+  height: 271px;
+  margin: 0px 20px;
+  background-color: #fff;
+}
+.excitement2 .paragraph {
+  font-size: 21px;
+  font-weight: 700;
+  padding-top: 1.4%;
+  padding-left: 1%;
+}
+.excitebook {
+  display: flex;
+  justify-content: space-evenly;
+}
+.excitebook .booklist {
+  width: 145px;
+  height: 200px;
+  background-color: #fff;
+}
+.hero-section2 {
+  width: 99%;
+  height: 420px;
+  margin: 20px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-section3 {
+  width: 99%;
+  height: 860px;
+  margin: 20px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+/* footer section */
+/* sign in section */
+.login {
+  height: 185px;
+  width: 100%;
+  background-color: #fff;
+}
+.login-inside {
+  width: 100%;
+  height: 125px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 65px;
+  line-height: 1.6em;
+}
+.back-top {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 15px 0px;
+  background-color: #324355;
+}
+
+.back-top a {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+.back-top:hover {
+  background-color: rgba(34, 47, 61, 0.813);
+}
+.login-inside p {
+  font-size: 13px;
+  font-weight: 500;
+}
+.sano {
+  font-size: 11px;
+  font-weight: 400;
+}
+.login-inside button {
+  font-size: 12px;
+  font-weight: 800;
+  width: 230px;
+  height: 28px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(#f5d679, #f4bb1f);
+  text-shadow: 0 1px 0 #ffe093;
+  cursor: pointer;
+}
+.sa {
+  color: #198496;
+  cursor: pointer;
+}
+.last-section {
+  width: 100%;
+  height: 1067px;
+}
+.last-one {
+  height: 507px;
+  width: 100%;
+  background-color: #232f3e;
+}
+.last-section .last-two {
+  height: 560px;
+  width: 100%;
+  background-color: #131a22;
+}
+.last-one .last-one-inside {
+  padding-top: 3.2%;
+  padding-bottom: 1.5%;
+  padding-left: 133px;
+  padding-right: 133px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.final {
+  width: 220px;
+  height: 318px;
+}
+.nonot {
+  width: 300px;
+}
+.final .cap2 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 3px;
+  color: #ffffff;
+}
+.final p {
+  align-items: center;
+  padding-left: 20%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.65rem;
+  color: #dddddd;
+}
+.amazon-usd {
+  width: 100%;
+  height: 88px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5%;
+}
+.foot-logo img {
+  width: 95px;
+  height: 55px;
+  padding-top: 8%;
+}
+.amazon-usd .foot-boxes1 {
+  width: 115.6;
+  height: 33.8px;
+  font-size: 13px;
+  color: #cccccc;
+  margin-left: 0.5%;
+  padding: 8px 20px;
+  border-radius: 2px;
+}
+.foot-boxes1 img {
+  width: 20px;
+}
+.foot-boxes1:hover {
+  cursor: pointer;
+}
+.last-border {
+  border: 0.8px solid silver;
+}
+.last-two-inside {
+  height: 493px;
+  width: 100%;
+  padding-top: 1.8%;
+  padding-left: 268px;
+  padding-right: 268px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 15px 30px;
+}
+.boxes-five {
+  width: 105px;
+  height: 80.4px;
+}
+.boxes-hundred {
+  width: 100px;
+  height: 80.4px;
+}
+.boxes-sixtyfour {
+  width: 164px;
+  height: 80.4px;
+}
+.boxes-fourteen {
+  width: 115px;
+  height: 80.4px;
+}
+.last-two-inside .cap {
+  font-size: 12px;
+  color: #dddddd;
+}
+.last-two-inside p {
+  font-size: 12px;
+  color: #999999;
+}
+.privacy {
+  height: 77px;
+  width: 100%;
+  font-size: 12px;
+  color: #dddddd;
+  text-align: center;
+  padding-top: 20px;
+}
+.black {
+  height: 10px;
+  width: 100%;
+  background-color: #131a22;
+}
